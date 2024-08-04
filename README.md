@@ -1,15 +1,17 @@
-# ParaBankEncora
+# ParaBank
 Este proyecto realiza el registro e inicio de sesión de un usuario
 
-Se tiene que tener en cuenta que este proyecto está trabajado para la versión de navegador: 127.0.6533.89
+Se tiene que tener en cuenta que este proyecto está trabajado con el driver para el navegador Chrome en la versión: 127.0.6533.89
 
-Para su ejecución en JUnit hacerlo con el siguiente enviroment: -Denvironment=dev
+Para su ejecución en JUnit hacerlo con el enviroment '-Denvironment=dev' y clase Runner.
 
-Para su ejecución en Maven hacerlo con la siguiente linea de código: mvn clean verify "-Dcucumber.filter.tags=@prueba" -Denvironment=dev
+Para su ejecución en Maven hacerlo con la siguiente linea de código: mvn clean verify "-Dcucumber.filter.tags=@Prueba" -Denvironment=dev
+
+Se ha utilizado el patrón de diseño Escreenplay 
 
 Se detalla a continuación la funcionalidad
 
-- Clase BQuestion: Se detallan los métodos para obtener y validar si un texto en específico se encuentran presentes y visibles.
+- BQuestion: Se detallan los métodos para obtener y validar si un texto en específico se encuentran presentes y visibles.
 - IniciarSesionTask: Valida si está presente, visible y habilitado los campos username y password, ingresa un valor para cada uno y luego hará clic para iniciar sesión.
 - isTask: Abre el navegador en la página mencionada en serenity.conf
 - commons: Se valida si los campos están presentes, visibles y habilitados, así también hace clic e ingresa el valor en cierto campo en específico.
